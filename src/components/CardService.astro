@@ -1,0 +1,78 @@
+---
+interface Props {
+    href: string;
+    imgSrc: string;
+    title: string;
+    description: string;
+    price: string;
+}
+
+const { href, imgSrc, title, description, price } = Astro.props;
+---
+
+<a href={href} class="service-card block bg-white p-6 shadow-lg text-center transition duration-300">
+    <div class="overflow-hidden rounded-lg">
+        <img src={imgSrc} alt={title} class="w-full h-48 object-cover transition-transform duration-300">
+    </div>
+    <h3 class="text-2xl font-semibold mb-3" style="font-family: 'Titillium Web', sans-serif;">{title}</h3>
+    <p class="text-gray-700" style="font-family: 'Titillium Web', sans-serif;">{description}</p>
+    <p class="text-blue-600 font-bold mt-2" style="font-family: 'Titillium Web', sans-serif;">{price}</p>
+</a>
+
+<style>
+    .service-card {
+        position: relative;
+        overflow: hidden;
+        transition: background-color 0.4s ease;
+    }
+
+    .service-card::before,
+    .service-card::after {
+        content: "";
+        position: absolute;
+        background-color: transparent;
+        transition: border-color 0.4s ease;
+    }
+
+    /* Borde superior izquierdo */
+    .service-card::before {
+        top: 0;
+        left: 0;
+        width: 50%;
+        height: 50%;
+        border-top: 4px solid transparent;
+        border-left: 4px solid transparent;
+    }
+
+    /* Borde inferior derecho */
+    .service-card::after {
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        height: 50%;
+        border-bottom: 4px solid transparent;
+        border-right: 4px solid transparent;
+    }
+
+    .service-card:hover {
+        background-color: #f3f4f6;
+    }
+
+    .service-card:hover::before {
+        border-top-color: #3b82f6;
+        border-left-color: #3b82f6;
+    }
+
+    .service-card:hover::after {
+        border-bottom-color: #3b82f6;
+        border-right-color: #3b82f6;
+    }
+
+    .service-card img {
+        transition: transform 0.4s ease;
+    }
+
+    .service-card:hover img {
+        transform: scale(1.1);
+    }
+</style>

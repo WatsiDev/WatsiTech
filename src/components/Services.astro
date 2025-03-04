@@ -1,0 +1,50 @@
+---
+import CardService from "./CardService.astro";
+---
+
+<section id="servicios" class="container mx-auto py-12">
+    <h2 class="text-4xl font-bold text-center mb-10" style="font-family: 'Aldrich', sans-serif;">Nuestros Servicios</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <CardService
+            href="/servicio/mantenimiento-preventivo"
+            imgSrc="/PastaTermica.jpg"
+            title="Mantenimiento Preventivo"
+            description="Limpieza interna y cambio de pasta térmica para mejorar el rendimiento."
+            price="Desde $600 MXN" />
+        
+        <CardService
+            href="/servicio/mantenimiento-correctivo"
+            imgSrc="/mantenimiento.jpeg"
+            title="Mantenimiento Correctivo"
+            description="Diagnóstico y reparación de fallas de hardware y software."
+            price="Cotización personalizada" />
+        
+        <CardService 
+            href="/servicio/formateo-instalacion"
+            imgSrc="/SistemaOperativo.jpg"
+            title="Formateo e Instalación de SO"
+            description="Reinstalación de Windows o Linux con optimización incluida."
+            price="$200 MXN" />
+
+        <CardService
+            href="/servicio/ensamble-pc"
+            imgSrc="/Ensamble.jpg"
+            title="Ensamble de PC"
+            description="Armado de computadoras según tus necesidades y presupuesto."
+            price="Desde $400 MXN" />
+
+        <CardService
+            href="/servicio/actualizacion-componentes"
+            imgSrc="/Componentes.jpg"
+            title="Actualización de hardware"
+            description="Cambio de componentes (HDD, RAM, CPU, etc.)"
+            price="Desde $200 MXN Hasta $400 MXN" />
+
+        <CardService
+            href="/servicio/instalacion-software"
+            imgSrc="/software.jpg"
+            title="Instalación de Software"
+            description="Instalación y configuración de programas esenciales para tu equipo."
+            price="Desde $100 MXN" />
+    </div>
+</section>
