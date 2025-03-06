@@ -1,0 +1,60 @@
+---
+import Footer from "../../components/Footer.astro";
+import Header from "../../components/Header.astro";
+import WhatsApp from "../../components/WhatsApp.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="WatiTech - Mantenimiento">
+    <Header />
+    <main class="container mx-auto px-6 py-12">
+        <div class="bg-white shadow-lg rounded-lg p-6">
+            <h2 class="text-4xl text-center font-bold text-gray-800 mb-6 font-aldrich">Mantenimiento Preventivo</h2>
+            <img src="/PastaTermica.jpg" alt="Mantenimiento Preventivo" class="w-full h-64 object-cover rounded-lg mb-6">
+            
+            <h2 class="text-2xl font-bold text-gray-800 mb-4 font-aldrich">¿Por qué es importante el mantenimiento preventivo?</h2>
+            <p class="text-gray-700 leading-relaxed mb-6">
+                Con el tiempo, el polvo, el calor y el desgaste afectan el rendimiento de tu PC o laptop.  
+                Un mantenimiento preventivo regular ayuda a prolongar la vida útil del equipo,  
+                evitar fallos inesperados y mejorar la velocidad del sistema.
+            </p>
+    
+            <h3 class="text-xl font-semibold text-gray-800 mb-3 font-aldrich">Beneficios de nuestro servicio:</h3>
+            <ul class="pl-6 text-gray-700 mb-6">
+                <li>🔹 Eliminación de polvo y residuos internos.</li>
+                <li>🔹 Cambio de pasta térmica para evitar sobrecalentamiento.</li>
+                <li>🔹 Optimización del sistema para mayor velocidad.</li>
+            </ul>
+    
+            <h3 class="text-xl font-semibold text-gray-800 mb-3 font-aldrich">¿Cómo realizamos el mantenimiento?</h3>
+            <ul class="pl-6 text-gray-700 mb-6">
+                <li>🔹 <strong>Limpieza interna y externa:</strong> Eliminamos polvo de ventiladores, tarjeta madre y fuente de poder.</li>
+                <li>🔹 <strong>Cambio de pasta térmica:</strong> Aplicamos pasta térmica nueva en procesador y GPU.</li>
+                <li>🔹 <strong>Optimización de software:</strong> Eliminamos archivos temporales y mejoramos el rendimiento del sistema.</li>
+            </ul>
+    
+            <h3 class="text-xl font-semibold text-gray-800 mb-3 font-aldrich">Preguntas Frecuentes</h3>
+            <ul class="pl-6 text-gray-700 mb-6">
+                <li>❓ <strong>¿Cada cuánto tiempo debo hacer mantenimiento?</strong> 📅 Se recomienda cada 6 meses.</li>
+                <li>❓ <strong>¿Puedo hacer mantenimiento solo con aire comprimido?</strong> 🚫 No es suficiente, la pasta térmica también debe renovarse.</li>
+                <li>❓ <strong>¿Cuánto tiempo tarda el servicio?</strong> ⏳ Aproximadamente 1 hora.</li>
+            </ul>
+    
+            <div class="text-center">
+                <a href="https://wa.me/5212219138451"
+                   target="_blank"
+                   class="bg-blue-500 text-white font-bold py-3 px-6 rounded-lg text-lg hover:bg-blue-700 transition duration-300">
+                   Agenda tu Mantenimiento 🛠️
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61573779841239"
+                   target="_blank"
+                   class="ml-4 bg-gray-800 text-white font-bold py-3 px-6 rounded-lg text-lg hover:bg-gray-900 transition duration-300">
+                   Ver en Facebook 📌
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <Footer />
+    <WhatsApp />
+</Layout>
