@@ -12,11 +12,20 @@ const { title } = Astro.props
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="description" content="Ofrecemos servicios de mantenimiento para PC y laptops, ensambles de PC, actualización de hardware, instalación de software y más. Expertos en mejorar el rendimiento de tus dispositivos." />
+		<meta name="keywords" content="mantenimiento PC, reparación de laptops, ensambles de PC, actualización de hardware, instalación de software, servicio técnico, soporte informático" />
+		<meta name="author" content="Tu Nombre o Empresa" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+		<title>{title} - Servicios de Mantenimiento PC y Laptops</title>
+		<meta property="og:title" content="{title} - Servicios de Mantenimiento PC y Laptops" />
+		<meta property="og:description" content="Mantenimiento, reparación y mejora de tu PC o laptop. Ensambles, actualizaciones de hardware e instalación de software. Contáctanos para más información." />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="/path/to/your-image.jpg" />
+		<meta property="og:url" content="watsitech.netlify.app" />
 	</head>
+	
 	
 	<body class="font-titillium">
 		<slot />
